@@ -1,5 +1,5 @@
 ﻿namespace Calculator;
-using MenuClass;
+using CalculatorMenu;
 
 public class Program
 {
@@ -10,12 +10,12 @@ public class Program
             "SUM",
             "SUBTRACT",
             "MULTIPLY",
-            "DIVIDE"
+            "DIVIDE",
         };
 
-        Menu menu = new Menu(sections);
+        CalculatorMenu calculatorMenu = new CalculatorMenu(sections);
 
         while (true)
-            menu.ShowMenu("CALCULATOR MENU");
+            calculatorMenu.ShowMenu("CALCULATOR MENU");
     }
 }
