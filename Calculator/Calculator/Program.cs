@@ -1,10 +1,21 @@
-﻿namespace Calculator
+﻿namespace Calculator;
+using MenuClass;
+
+public class Program
 {
-    internal class Program
+    static void Main()
     {
-        static void Main(string[] args)
+        List<string> sections = new List<string>()
         {
-            Console.WriteLine("Hello, World!");
-        }
+            "SUM",
+            "SUBTRACT",
+            "MULTIPLY",
+            "DIVIDE"
+        };
+
+        Menu menu = new Menu(sections);
+
+        while (true)
+            menu.ShowMenu("CALCULATOR MENU");
     }
 }
