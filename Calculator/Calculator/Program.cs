@@ -11,6 +11,7 @@ public class Program
             "SUBTRACT",
             "MULTIPLY",
             "DIVIDE",
+            "EXIT",
         };
 
         CalculatorMenu calculatorMenu = new CalculatorMenu(sections);

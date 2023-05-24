@@ -11,6 +11,9 @@ public class CalculatorMenu : Menu
         int curSectionIndex = base.ShowMenu(menuTitle);
         Console.Clear();
 
+        if (curSectionIndex == 4)
+            Environment.Exit(0);
+
         Console.WriteLine("Enter two numbers: ");
 
         if (double.TryParse(Console.ReadLine(), out double num1) == false)
